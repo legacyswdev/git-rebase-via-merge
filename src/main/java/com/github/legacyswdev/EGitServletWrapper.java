@@ -52,7 +52,6 @@ public class EGitServletWrapper extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.service(req, resp);
 		SERVLET_THREAD_OUTPUT_STREAM.set(resp.getOutputStream());
 		javax.servlet.http.HttpServletRequest javaxRequest = createProxy(javax.servlet.http.HttpServletRequest.class, req);
 		javax.servlet.http.HttpServletResponse javaxResponse = createProxy(javax.servlet.http.HttpServletResponse.class,resp);
