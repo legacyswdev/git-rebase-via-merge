@@ -28,6 +28,7 @@ import org.eclipse.jgit.treewalk.FileTreeIterator;
 
 /**
  * This code is a work in progress and is incomplete.
+ * merge then rebase -> mebase
  */
 public class GitRebaseViaMerge implements AutoCloseable {
 
